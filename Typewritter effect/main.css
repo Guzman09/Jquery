@@ -1,0 +1,23 @@
+
+.body {
+	margin: 10;
+	background-color: : black;
+	}
+
+#main1 {
+	position: absolute;
+	width: 100%;
+	height: 550px;
+	top:200;
+	border-bottom: 2px solid white;
+	background-image: url("bg.jpg");
+	background-size: cover;
+}
+
+#typing_text{
+	font-family: monospace;
+	color: white
+	font-weight:unset;
+	font-size: 95px;
+	text-align: center;
+}
