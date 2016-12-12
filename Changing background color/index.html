@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Changing Background</title>
+
+	<script type="text/javascript">
+		
+		function cambioFondo(x) {
+			console.log(x.value);
+
+			var body = document.getElementById("body");
+			body.style.backgroundColor = x.value;
+	}
+
+
+	</script>
+</head>
+<body id="body">
+
+		<select name="background" id="background" onchange="cambioFondo(this)">
+			<option value="red">Red</option>
+			<option value="blue">Blue</option>
+			<option value="yellow">Yellow</option>
+		</select>
+
+
+
+
+</body>
+</html>
