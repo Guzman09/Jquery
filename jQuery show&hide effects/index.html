@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Effect</title>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- NavBar-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Test</a>
+	    </div>
+	</div>
+</nav>
+
+<!--CONTENT-->
+
+
+
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>We're right here, just testing what jQuery can do...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button" id="jumbo">Learn more</a></p>
+</div>
+
+<!-- Well & buttons-->
+<div class="well well-lg" id="lgw" style="display: none;">You got me! I'm just a large well hiding! <a class="btn btn-primary btn-md" href="#" role="button" id="jumbo2">Learn even more</a></div>
+
+<div class="well well-sm" id="smw" style="display: none;"></div>
+
+<!-- Images-->
+
+<div class="row" id="thumb" style="display: none;">
+  <div class="col-xs-6 col-md-3">
+    <a class="thumbnail">
+      <img src="img/jumbo.jpg" alt="...">
+    </a>
+  </div>
+
+
+  <div class="col-xs-6 col-md-3">
+    <a class="thumbnail">
+      <img src="img/thumb-1.jpg" alt="...">
+    </a>
+  </div>
+
+
+  <div class="col-xs-6 col-md-3">
+    <a class="thumbnail">
+      <img src="img/thumb-2.jpg" alt="...">
+    </a>
+  </div>
+ 
+
+  <div class="col-xs-6 col-md-3">
+    <a  class="thumbnail">
+      <img src="img/thumb-3.jpg" alt="...">
+    </a>
+  </div>
+  
+</div>
+
+
+
+
+<script src="jquery-3.1.1.min.js"></script>
+
+<script>
+	
+	$('#jumbo').on('click', function() {
+
+		$("#lgw").toggle(150);
+
+	});
+	$('#jumbo2').on('click', function(){
+
+		$('#smw').toggle(150);
+
+	});
+	$('#jumbo2').on('click', function(){
+
+		$('#thumb').toggle(150);
+
+	});
+
+</script>
+
+
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<footer>
+         <p>Created by <a href="https://github.com/Guzman09">Guzman Gonzalez</a></p>
+  	</footer>
+</body>
+</html>
